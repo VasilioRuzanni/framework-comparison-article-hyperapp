@@ -1,6 +1,6 @@
 # hyperapp example app
 
-The `hyperapp`-based example app for the Toptal non-mainstream framework comparison article.
+The `hyperapp`-based example app for the non-mainstream framework comparison article.
 
 ## Quickstart
 
@@ -12,4 +12,4 @@ The `hyperapp`-based example app for the Toptal non-mainstream framework compari
 
         yarn start
 
-1) There's no step 3. Open up a browser at [`localhost:1234`](http://localhost:1234).
+3) There's no step 3. Open up a browser at [`localhost:1234`](http://localhost:1234).
