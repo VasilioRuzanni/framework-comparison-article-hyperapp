@@ -1,12 +1,12 @@
 # hyperapp example app
 
-The `hyperapp`-based example app for the non-mainstream framework comparison article.
+The `hyperapp`-based example app for an upcoming, non-mainstream framework comparison article.
 
 ## Quickstart
 
 1) First, install everything with `yarn`:
 
-        yarn install
+        yarn
 
 2) Then start the app (with [parcel](https://parceljs.org/)):
 
