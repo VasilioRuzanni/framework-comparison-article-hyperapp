@@ -121,7 +121,7 @@ body {
 }
 
 .search-btn {
-  width: 100px;
+  width: 110px;
   border-radius: 2px;
   border: none;
   font-size: 11px;
@@ -143,6 +143,12 @@ body {
   background-color: #383d44;
   box-shadow: 0 2px 15px -2px rgba(0, 0, 0, 0.6);
   transform: scale(0.96);
+}
+
+.search-btn:disabled {
+  background-color: #c0c4ca;
+  box-shadow: none;
+  transform: none;
 }
 
 /* Post list */
@@ -180,6 +186,39 @@ body {
   justify-content: center;
   padding: 50px;
   color: #888;
+}
+
+.list-empty-placeholder {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.list-empty-placeholder-message {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #bbb;
+}
+
+.list-empty-placeholder-note {
+  font-size: 14px;
+  font-weight: 200;
+  color: #888;
+}
+
+@media screen and (min-width: 560px) {
+  .list-empty-placeholder {
+    padding: 40px 0;
+  }
+
+  .list-empty-placeholder-message {
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+
+  .list-empty-placeholder-note {
+    font-size: 16px;
+  }
 }
 
 /* Spinner */

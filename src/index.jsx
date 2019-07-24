@@ -58,6 +58,14 @@ const PostList = props => (
   </div>
 );
 
+const NoContentPlaceholder = ({ message, note }) => (
+  <div className="list-empty-placeholder">
+    <div className="list-empty-placeholder-message">{message}</div>
+
+    {note && <div className="list-empty-placeholder-note">{note}</div>}
+  </div>
+);
+
 app({
   init,
   view: state => (
@@ -81,8 +89,12 @@ app({
                 oninput={[inputChange, getTargetValue]}
               />
 
-              <button type="submit" className="search-btn">
-                Search
+              <button
+                type="submit"
+                className="search-btn"
+                disabled={state.isLoading}
+              >
+                {state.isLoading ? 'Searching...' : 'Search'}
               </button>
             </form>
           </div>
@@ -95,8 +107,13 @@ app({
             <div className="list-loader">
               <div className="spinner" />
             </div>
-          ) : (
+          ) : state.posts.length ? (
             <PostList posts={state.posts} />
+          ) : (
+            <NoContentPlaceholder
+              message="Nothing found :("
+              note="Don't give up! Type in something different."
+            />
           )}
         </article>
 
