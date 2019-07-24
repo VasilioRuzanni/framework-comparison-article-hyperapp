@@ -1,6 +1,6 @@
 import { h, app } from 'hyperapp';
 import { Http } from 'hyperapp-fx';
-import hyperappLogo from '../public/hyperapp-new-logo.png';
+import hyperappLogo from '../public/hyperapp-2-logo-sign.svg';
 
 // NOTE: Once the package is published, it would be imported with
 // import { preventDefault } from '@hyperapp/events';
