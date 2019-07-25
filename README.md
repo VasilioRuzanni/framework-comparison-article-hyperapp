@@ -1,6 +1,11 @@
 # hyperapp example app
 
-The `hyperapp`-based example app for an upcoming, non-mainstream framework comparison article.
+A `hyperapp`-based example app. This repo and its [live demo](https://vasilioruzanni-framework-comparison-article-hyperapp.glitch.me/) are published as part of the corresponding blog article at https://www.toptal.com/javascript/whats-better-than-vue-js-react-angular
+
+Visit https://www.toptal.com/blog and subscribe to our newsletter to read great posts!
+
+* * *
+
 
 ## Quickstart
 
